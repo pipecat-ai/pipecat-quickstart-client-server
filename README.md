@@ -24,8 +24,8 @@ This example requires running both a server and client in **two separate termina
 ### Clone this repository
 
 ```bash
-git clone https://github.com/pipecat-ai/pipecat-client-server-quickstart.git
-cd pipecat-client-server-quickstart
+git clone https://github.com/pipecat-ai/quickstart-client-server.git
+cd quickstart-client-server
 ```
 
 ### Terminal 1: Server Setup
