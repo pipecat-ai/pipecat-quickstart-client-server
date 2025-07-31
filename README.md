@@ -24,15 +24,15 @@ This example requires running both a server and client in **two separate termina
 ### Clone this repository
 
 ```bash
-git clone https://github.com/pipecat-ai/quickstart-client-server.git
-cd quickstart-client-server
+git clone https://github.com/pipecat-ai/pipecat-quickstart-client-server.git
+cd pipecat-quickstart-client-server
 ```
 
 ### Terminal 1: Server Setup
 
 1. Set up a virtual environment
 
-From the `pipecat-client-server-quickstart` directory, run:
+From the `pipecat-quickstart-client-server` directory, run:
 
 ```bash
 cd server
@@ -82,7 +82,7 @@ python bot.py
 
 1. Open a new terminal window and navigate to the `client` folder:
 
-From the `pipecat-client-server-quickstart` directory, run:
+From the `pipecat-quickstart-client-server` directory, run:
 
 ```bash
 cd client
