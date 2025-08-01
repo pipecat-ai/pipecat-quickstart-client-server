@@ -30,27 +30,7 @@ cd pipecat-quickstart-client-server
 
 ### Terminal 1: Server Setup
 
-1. Set up a virtual environment
-
-   From the `pipecat-quickstart-client-server` directory, run:
-
-   ```bash
-   cd server
-   python -m venv .venv
-   source .venv/bin/activate  # On Windows: .venv\Scripts\activate
-   ```
-
-   > Using `uv`? Create your venv using: `uv sync`
-
-2. Install dependencies
-
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-   > Using `uv`? Dependencies are already installed from the previous step.
-
-3. Configure environment variables
+1. Configure environment variables
 
    Create a `.env` file:
 
@@ -66,9 +46,18 @@ cd pipecat-quickstart-client-server
    CARTESIA_API_KEY=your_cartesia_api_key
    ```
 
-4. Run the example
+2. Set up a virtual environment and install dependencies
 
-   Run your bot using:
+   ```bash
+   cd server
+   python -m venv .venv
+   source .venv/bin/activate  # On Windows: .venv\Scripts\activate
+   pip install -r requirements.txt
+   ```
+
+   > Using `uv`? Create your venv using: `uv sync`
+
+3. Run your server bot
 
    ```bash
    python bot.py
@@ -100,9 +89,11 @@ cd pipecat-quickstart-client-server
    npm run dev
    ```
 
-4. **Open http://localhost:5173 in your browser** and click `Connect` to start talking to your bot.
+### Connect and test
 
-   > 💡 **Tip**: Check your server terminal for debug logs showing Pipecat's internal workings.
+**Open http://localhost:5173 in your browser** and click `Connect` to start talking to your bot.
+
+> 💡 **Tip**: Check your server terminal for debug logs showing Pipecat's internal workings.
 
 ## Troubleshooting
 
