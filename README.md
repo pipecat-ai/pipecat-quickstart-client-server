@@ -32,77 +32,77 @@ cd pipecat-quickstart-client-server
 
 1. Set up a virtual environment
 
-From the `pipecat-quickstart-client-server` directory, run:
+   From the `pipecat-quickstart-client-server` directory, run:
 
-```bash
-cd server
-python -m venv .venv
-source .venv/bin/activate  # On Windows: .venv\Scripts\activate
-```
+   ```bash
+   cd server
+   python -m venv .venv
+   source .venv/bin/activate  # On Windows: .venv\Scripts\activate
+   ```
 
-> Using `uv`? Create your venv using: `uv venv && source .venv/bin/activate`
+   > Using `uv`? Create your venv using: `uv sync`
 
 2. Install dependencies
 
-```bash
-pip install -r requirements.txt
-```
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-> Using `uv`? Install requirements using: `uv pip install -r requirements.txt`
+   > Using `uv`? Dependencies are already installed from the previous step.
 
 3. Configure environment variables
 
-Create a `.env` file:
+   Create a `.env` file:
 
-```bash
-cp env.example .env
-```
+   ```bash
+   cp env.example .env
+   ```
 
-Then, add your API keys:
+   Then, add your API keys:
 
-```
-DEEPGRAM_API_KEY=your_deepgram_api_key
-OPENAI_API_KEY=your_openai_api_key
-CARTESIA_API_KEY=your_cartesia_api_key
-```
+   ```
+   DEEPGRAM_API_KEY=your_deepgram_api_key
+   OPENAI_API_KEY=your_openai_api_key
+   CARTESIA_API_KEY=your_cartesia_api_key
+   ```
 
 4. Run the example
 
-Run your bot using:
+   Run your bot using:
 
-```bash
-python bot.py
-```
+   ```bash
+   python bot.py
+   ```
 
-> Using `uv`? Run your bot using: `uv run bot.py`
+   > Using `uv`? Run your bot using: `uv run bot.py`
 
-> 💡 First run note: The initial startup may take ~10 seconds as Pipecat downloads required models, like the Silero VAD model.
+   > 💡 First run note: The initial startup may take ~15 seconds as Pipecat downloads required models, like the Silero VAD model.
 
 ### Terminal 2: Client Setup
 
 1. Open a new terminal window and navigate to the `client` folder:
 
-From the `pipecat-quickstart-client-server` directory, run:
+   From the `pipecat-quickstart-client-server` directory, run:
 
-```bash
-cd client
-```
+   ```bash
+   cd client
+   ```
 
 2. Install dependencies:
 
-```bash
-npm i
-```
+   ```bash
+   npm i
+   ```
 
 3. Run the client:
 
-```bash
-npm run dev
-```
+   ```bash
+   npm run dev
+   ```
 
 4. **Open http://localhost:5173 in your browser** and click `Connect` to start talking to your bot.
 
-> 💡 **Tip**: Check your server terminal for debug logs showing Pipecat's internal workings.
+   > 💡 **Tip**: Check your server terminal for debug logs showing Pipecat's internal workings.
 
 ## Troubleshooting
 

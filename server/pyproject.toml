@@ -1,0 +1,18 @@
+[project]
+name = "pipecat-client-server-example"
+version = "0.1.0"
+description = "Client/server web example using Pipecat"
+requires-python = ">=3.10"
+dependencies = [
+    "pipecat-ai[webrtc,silero,deepgram,openai,cartesia,runner]>=0.0.77",
+]
+
+[dependency-groups]
+dev = [
+    "ruff~=0.12.1",
+]
+
+[tool.ruff]
+line-length = 100
+[tool.ruff.lint]
+select = ["I"]
