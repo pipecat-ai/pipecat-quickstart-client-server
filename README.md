@@ -40,7 +40,7 @@ python -m venv .venv
 source .venv/bin/activate  # On Windows: .venv\Scripts\activate
 ```
 
-> Using `uv`? Create your venv using: `uv venv && source .venv/bin/activate`.
+> Using `uv`? Create your venv using: `uv venv && source .venv/bin/activate`
 
 2. Install dependencies
 
@@ -48,7 +48,7 @@ source .venv/bin/activate  # On Windows: .venv\Scripts\activate
 pip install -r requirements.txt
 ```
 
-> Using `uv`? Install requirements using: `uv pip install -r requirements.txt`.
+> Using `uv`? Install requirements using: `uv pip install -r requirements.txt`
 
 3. Configure environment variables
 
@@ -74,7 +74,7 @@ Run your bot using:
 python bot.py
 ```
 
-> Using `uv`? Run your bot using: `uv run bot.py`.
+> Using `uv`? Run your bot using: `uv run bot.py`
 
 > 💡 First run note: The initial startup may take ~10 seconds as Pipecat downloads required models, like the Silero VAD model.
 
