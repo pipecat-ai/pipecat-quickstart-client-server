@@ -14,6 +14,7 @@ This is the recommended architecture for web applications that need custom inter
 ## Prerequisites
 
 - Python 3.10+
+- [uv](https://docs.astral.sh/uv/getting-started/installation/) package manager installed
 - `npm` installed
 - AI Service API keys for: [Deepgram](https://console.deepgram.com/signup), [OpenAI](https://auth.openai.com/create-account), and [Cartesia](https://play.cartesia.ai/sign-up)
 
@@ -46,24 +47,19 @@ cd pipecat-quickstart-client-server
    CARTESIA_API_KEY=your_cartesia_api_key
    ```
 
+   You can optionally provide a DAILY_API_KEY for using the DailyTransport when running locally.
+
 2. Set up a virtual environment and install dependencies
 
    ```bash
-   cd server
-   python -m venv .venv
-   source .venv/bin/activate  # On Windows: .venv\Scripts\activate
-   pip install -r requirements.txt
+   uv sync
    ```
-
-   > Using `uv`? Create your venv using: `uv sync`
 
 3. Run your server bot
 
    ```bash
-   python bot.py
+   uv run bot.py
    ```
-
-   > Using `uv`? Run your bot using: `uv run bot.py`
 
    > 💡 First run note: The initial startup may take ~15 seconds as Pipecat downloads required models, like the Silero VAD model.
 
@@ -94,6 +90,10 @@ cd pipecat-quickstart-client-server
 **Open http://localhost:5173 in your browser** and click `Connect` to start talking to your bot.
 
 > 💡 **Tip**: Check your server terminal for debug logs showing Pipecat's internal workings.
+
+## Deploy to Pipecat Cloud
+
+You can deploy your bot to Pipecat Cloud. For guidance, follow the steps outlining in the [pipecat-quickstart's Deployment section](https://docs.pipecat.ai/getting-started/quickstart#step-2%3A-deploy-to-production).
 
 ## Troubleshooting
 
