@@ -1,3 +1,6 @@
+> [!CAUTION]
+> This repo is no longer maintained. Checkout [pipecat-examples](https://github.com/pipecat-ai/pipecat-examples) for recent demos and example code. 
+
 # Client/Server Web Example
 
 Learn how to build web applications using Pipecat's client/server architecture. This approach separates your bot logic from your user interface, giving you full control over the client experience while maintaining real-time voice communication.
